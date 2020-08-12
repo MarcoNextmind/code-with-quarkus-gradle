@@ -1,0 +1,1 @@
+./gradlew quarkusBuild --uber-jar
