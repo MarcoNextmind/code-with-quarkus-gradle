@@ -1,1 +1,1 @@
-./gradlew quarkusBuild --uber-jar
+web: ./gradlew quarkusBuild --uber-jar
