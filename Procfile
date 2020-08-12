@@ -1,1 +1,1 @@
-web: ./gradlew quarkusBuild --uber-jar
+web: java -jar build/*-runner.jar
