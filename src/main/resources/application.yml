@@ -1,0 +1,10 @@
+quarkus:
+  datasource:
+    driver: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/quarkus
+    username: postgres
+    password: postgres
+  hibernate-orm:
+    database:
+      generation: drop-and-create
+  
