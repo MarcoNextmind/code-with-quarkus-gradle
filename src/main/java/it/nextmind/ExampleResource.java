@@ -15,7 +15,6 @@ public class ExampleResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-    	System.out.println(em);
         return "hello";
     }
 }
