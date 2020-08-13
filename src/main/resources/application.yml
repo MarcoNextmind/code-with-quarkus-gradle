@@ -1,10 +1,20 @@
 quarkus:
   datasource:
     driver: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/quarkus
-    username: postgres
-    password: postgres
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
   hibernate-orm:
     database:
       generation: drop-and-create
+"%dev":
+  quarkus:
+    datasource:
+      driver: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/quarkus
+      username: postgres
+      password: postgres
+    hibernate-orm:
+      database:
+        generation: drop-and-create
   
